@@ -17,5 +17,9 @@ export type Company = {
 //! Literal types
 type Direction = "up" | "down" | "left" | "right";
 
-//! Intersection type, 1:00:39
-https://www.twitch.tv/videos/2688909256
+//! Intersection type, es de 2 tipos, en este ejemplo , tiene que ser de User y UserId
+export type UserId = {
+  readonly id: string | number;
+};
+export type UserEntity = User & UserId;
+

@@ -9,9 +9,6 @@ numbers.push(10);
 const numbersAlts: Array<number> = [10, 20, 30];
 numbersAlts.push(40);
 
-//!Tupla, indicar LA LONGITUD Y TIPO DE DATO.
-const fruits: [string, string, string] = ["naranja", "mandarina", "uva"];
-
 //! Array vacío
 const empty = []; //* si es vacío es de tipo any(de cualquier tipo). EVITAR ANY SIEMPRE
 let strings: string[] = [];

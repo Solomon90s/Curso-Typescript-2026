@@ -1,6 +1,6 @@
 //! Objetos
 //* Importamos el tipo que hemos creado
-import type { User } from "./031.types.ts";
+import type { User, UserEntity } from "./031.types.ts";
 
 //* Tipar objeto mediante type alias(contrato que debe cumplir).
 // type User = {
@@ -31,4 +31,21 @@ const newUser: User = {
     nameCompany: "lakers",
     address: "california",
   },
+};
+
+const entity: UserEntity = {
+  id: 1,
+  username: "solomon",
+  age: 30,
+  role: "admin",
+};
+
+//! Para tipar si es dinámico
+type Dictionary = {
+  [key: string]: string;
+};
+const dictionary: Dictionary = {
+  apple: "Fruta que es una manzana.",
+  banana: "Fruta que es manzana.",
+  cherry: "Fruta que es una cereza.",
 };
